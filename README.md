@@ -34,8 +34,7 @@ If you are LaTeX user:
 
   2. Place all graphics in ```Images``` folder
 
-  3. Fill in appropriate details in ```superior_proposal.tex``` and
-     ```superior_proposal.bib```
+  3. Fill in appropriate details in ```superior_proposal.tex``` and ```superior_proposal.bib```
 
   4. Run
      A. LaTeX twice on superior_proposal (PDFLaTeX if images are JPG or PDF)
