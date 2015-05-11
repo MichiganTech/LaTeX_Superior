@@ -1,0 +1,79 @@
+LaTeX: Michigan Tech Superior Proposal Template
+================
+
+What is this?
+-------------------
+
+A LaTeX (and MS Word) template for writing a short proposal to request 
+accounts on Superior, Michigan Tech's shared research computing infrastructure.
+
+Contents: 
+-------------------
+
+  * superior_proposal.tex
+  * superior_proposal.sty
+  * superior_proposal.bib
+  * superior_proposal.pdf
+  * superior_proposal.docx
+  * Images/MichiganTech.eps
+  * Images/image_01.eps
+  * Images/image_02.eps
+  * Images/image_03.eps
+  * Images/graph_01.dat
+  * Images/graph_01.eps
+  * Images/graph_01.gnu
+  * Images/graph_01.jpg
+  * Makefile
+
+What should one do?
+-------------------
+
+If you are LaTeX user:
+
+  1. There is no need to edit MichiganTech.cls
+  2. Fill in appropriate details in superior_proposal.tex and
+     superior_proposal.bib
+  3. Run
+     A. LaTeX twice on superior_proposal
+     B. BibTex once on superior_proposal
+     C. LaTeX twice on superior_proposal
+     D. Convert the DVI to Postscript
+     E. Convert the Postscript to PDF
+  4. In lieu of steps in #3, you may just run 'make' on a linux machine
+  5. Rename 'superior_proposal.pdf' as 'superior_proposal-john.pdf',
+     replacing 'john' with your own Michigan Tech ISO username, and email
+     it to Dr. Warren Perger (```wfp@mtu.edu```)
+
+
+If you are a MS Word user:
+
+  1. Fill in appropriate details in superior_proposal.docx
+  2. Rename 'superior_proposal.docx' as 'superior_proposal-john.docx',
+     replacing 'john' with your own Michigan Tech ISO username, and email
+     it to Dr. Warren Perger (```wfp@mtu.edu```)
+
+
+What if you are working on multiple projects?
+-------------------
+
+Only one proposal will suffice. Just be sure to indicate different projects
+and a brief description (few sentences) about each one of them.
+
+
+Got questions? Need help?
+-------------------
+
+DO NOT send your questions, comments and/or concerns about this template to 
+Information Technology. [Google](http://google.com/) search often provides a 
+quick and reliable answer. If all else fails, then contact the author.
+
+
+Author
+-------------------
+
+Dr. Gowtham, PhD          
+Director of Research Computing, IT             
+Adj. Asst. Professor, Physics/ECE               
+Michigan Technological University                 
+Email: g@mtu.edu             
+http://sgowtham.com
