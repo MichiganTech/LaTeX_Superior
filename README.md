@@ -10,7 +10,7 @@ accounts on Superior, Michigan Tech's shared research computing infrastructure.
 Contents
 -------------------
 
-  * superior_proposal.cls
+  * MichiganTech.cls
   * superior_proposal.tex
   * superior_proposal.bib
   * superior_proposal.pdf
