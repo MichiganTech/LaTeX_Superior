@@ -55,7 +55,8 @@ If you are LaTeX user:
 
 If you are a MS Word user:
 
-  1. Fill in appropriate details in superior_proposal.docx
+  1. Fill in appropriate details in ```superior_proposal.docx```
+
   2. Rename ```superior_proposal.docx``` as ```superior_proposal-john.docx```,
      replacing ```john``` with your own Michigan Tech ISO username, and email
      it to Dr. Warren Perger (```wfp@mtu.edu```)
