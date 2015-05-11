@@ -46,7 +46,7 @@ If you are LaTeX user:
 
      D. Convert the DVI to Postscript and convert the Postscript to PDF
 
-  5. In lieu of steps in #3, you may just run ```make``` on a linux machine
+  5. In lieu of steps in #4, you may just run ```make``` on a linux machine
 
   6. Rename ```superior_proposal.pdf``` as ```superior_proposal-john.pdf```,
      replacing ```john``` with your own Michigan Tech ISO username, and email
