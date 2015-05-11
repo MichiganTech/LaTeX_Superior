@@ -37,9 +37,13 @@ If you are LaTeX user:
   3. Fill in appropriate details in ```superior_proposal.tex``` and ```superior_proposal.bib```
 
   4. Run
+
      A. LaTeX twice on superior_proposal (PDFLaTeX if images are JPG or PDF)
+
      B. BibTex once on superior_proposal
+
      C. LaTeX twice on superior_proposal (PDFLaTeX if images are JPG or PDF)
+
      D. Convert the DVI to Postscript and convert the Postscript to PDF
 
   5. In lieu of steps in #3, you may just run ```make``` on a linux machine
