@@ -1,4 +1,4 @@
-LaTeX: Michigan Tech Superior Proposal Template
+Michigan Tech Superior Proposal Template
 ================
 
 What is this?
