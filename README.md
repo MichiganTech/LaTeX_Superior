@@ -31,16 +31,20 @@ What should one do?
 If you are LaTeX user:
 
   1. There is no need to edit ```MichiganTech.cls``` or the ```Makefile```
+
   2. Place all graphics in ```Images``` folder
+
   3. Fill in appropriate details in ```superior_proposal.tex``` and
      ```superior_proposal.bib```
+
   4. Run
-     A. LaTeX twice on superior_proposal
+     A. LaTeX twice on superior_proposal (PDFLaTeX if images are JPG or PDF)
      B. BibTex once on superior_proposal
-     C. LaTeX twice on superior_proposal
-     D. Convert the DVI to Postscript
-     E. Convert the Postscript to PDF
+     C. LaTeX twice on superior_proposal (PDFLaTeX if images are JPG or PDF)
+     D. Convert the DVI to Postscript and convert the Postscript to PDF
+
   5. In lieu of steps in #3, you may just run ```make``` on a linux machine
+
   6. Rename ```superior_proposal.pdf``` as ```superior_proposal-john.pdf```,
      replacing ```john``` with your own Michigan Tech ISO username, and email
      it to Dr. Warren Perger (```wfp@mtu.edu```)
