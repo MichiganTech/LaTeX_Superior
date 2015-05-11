@@ -1,4 +1,4 @@
-Michigan Tech Superior Proposal Template
+HPC: Superior Proposal Template
 ================
 
 What is this?
