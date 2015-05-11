@@ -7,11 +7,11 @@ What is this?
 A LaTeX (and MS Word) template for writing a short proposal to request 
 accounts on Superior, Michigan Tech's shared research computing infrastructure.
 
-Contents: 
+Contents
 -------------------
 
+  * superior_proposal.cls
   * superior_proposal.tex
-  * superior_proposal.sty
   * superior_proposal.bib
   * superior_proposal.pdf
   * superior_proposal.docx
@@ -30,26 +30,27 @@ What should one do?
 
 If you are LaTeX user:
 
-  1. There is no need to edit MichiganTech.cls
-  2. Fill in appropriate details in superior_proposal.tex and
-     superior_proposal.bib
-  3. Run
+  1. There is no need to edit ```MichiganTech.cls``` or the ```Makefile```
+  2. Place all graphics in ```Images``` folder
+  3. Fill in appropriate details in ```superior_proposal.tex``` and
+     ```superior_proposal.bib```
+  4. Run
      A. LaTeX twice on superior_proposal
      B. BibTex once on superior_proposal
      C. LaTeX twice on superior_proposal
      D. Convert the DVI to Postscript
      E. Convert the Postscript to PDF
-  4. In lieu of steps in #3, you may just run 'make' on a linux machine
-  5. Rename 'superior_proposal.pdf' as 'superior_proposal-john.pdf',
-     replacing 'john' with your own Michigan Tech ISO username, and email
+  5. In lieu of steps in #3, you may just run ```make``` on a linux machine
+  6. Rename ```superior_proposal.pdf``` as ```superior_proposal-john.pdf```,
+     replacing ```john``` with your own Michigan Tech ISO username, and email
      it to Dr. Warren Perger (```wfp@mtu.edu```)
 
 
 If you are a MS Word user:
 
   1. Fill in appropriate details in superior_proposal.docx
-  2. Rename 'superior_proposal.docx' as 'superior_proposal-john.docx',
-     replacing 'john' with your own Michigan Tech ISO username, and email
+  2. Rename ```superior_proposal.docx``` as ```superior_proposal-john.docx```,
+     replacing ```john``` with your own Michigan Tech ISO username, and email
      it to Dr. Warren Perger (```wfp@mtu.edu```)
 
 
@@ -71,7 +72,7 @@ quick and reliable answer. If all else fails, then contact the author.
 Author
 -------------------
 
-Dr. Gowtham, PhD          
+Dr. Gowtham, PhD         
 Director of Research Computing, IT             
 Adj. Asst. Professor, Physics/ECE               
 Michigan Technological University                 
