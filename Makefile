@@ -1,57 +1,57 @@
-# Makefile to compile superior_proposal.tex to generate superior_proposal.pdf
+# Makefile
+#
+# Compile superior_proposal.tex to generate superior_proposal.pdf
 # and clean up any unnecessary files.
 
-# Basic variables
-SHELL    = sh
-RM       = rm
-MV       = mv
-AWK      = awk
-SED      = sed
-LATEX    = latex
-BIBTEX   = bibtex
-DVIPS    = dvips
-DVIPDF   = dvipdf
-PS2PDF   = ps2pdf
-SLEEP    = sleep
+# Necessary variables
+PROPOSAL     = superior_proposal
+DEPENDENCIES = $(PROPOSAL).tex  \
+               MichiganTech.cls \
+               Images/MichiganTech.eps \
+               Images/MichiganTech.png
+TMP_FILES    = acr   alg   aux   bbl  bcf  blg   blx   brf   dvi  \
+               fdb_latexmk fls   gnuplot   glg   glo   gls   idx  \
+               ilg   ind   ist   loa  lof  log   lol   lot   maf  \
+               mtc   mtc0  nav   nlo  out  out.ps      pdfsync    \
+               ps    pyg   run.xml    sagetex    snm   sout       \
+               stc   sympy       synctex.gz      table  tdo  thm  \
+               toc   vrb   xdy   xwm
 
-FILENAME  = superior_proposal
-TMP_FILES = $(FILENAME).aux \
-            $(FILENAME).bbl \
-            $(FILENAME).dvi \
-            $(FILENAME).log \
-            $(FILENAME).nav \
-            $(FILENAME).out \
-            $(FILENAME).ps  \
-            $(FILENAME).snm \
-            $(FILENAME).synctex.gz \
-            $(FILENAME).toc \
-            $(FILENAME).vrb
-
-# Targets
+# Default target
 all:
-	make proposal
+	@echo
+	@echo
+	@echo  "  Use one of the following two methods"
+	@echo
+	@echo  "    make LATEX       (iff all images are EPS or PS)"
+	@echo  "    make PDFLATEX    (iff all images are JPG, PDF, PNG)"
+	@echo
+	@echo
 
-proposal:
-	@echo
-	@echo "Check if $(FILENAME).tex exists"
-	@echo "If yes, compile; if not, move on"
-	@echo
-	if [ -f "$(FILENAME).tex" ]; \
-	then \
-	  make clean; \
-	  latex  $(FILENAME); \
-	  latex  $(FILENAME); \
-	  bibtex $(FILENAME); \
-	  latex  $(FILENAME); \
-	  latex  $(FILENAME); \
-	  dvips -R0 -Ppdf -t letter -o $(FILENAME).ps $(FILENAME).dvi; \
-	  sed -i '/^SDict begin \[$$/,/^end$$/d' $(FILENAME).ps; \
-	  ps2pdf -dPDFSETTINGS=/prepress -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 $(FILENAME).ps $(FILENAME).pdf; \
-	  make clean; \
-	fi
-	@echo
+LATEX: $(DEPENDENCIES)
+	make clean
+	latex  $(PROPOSAL).tex
+	bibtex $(PROPOSAL)
+	latex  $(PROPOSAL).tex
+	latex  $(PROPOSAL).tex
+	dvips -R0 -Ppdf -t letter -o $(PROPOSAL).ps $(PROPOSAL).dvi
+	sed -i '/^SDict begin \[$$/,/^end$$/d' $(PROPOSAL).ps
+	ps2pdf -dPDFSETTINGS=/prepress -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 $(PROPOSAL).ps $(PROPOSAL).pdf
+	make clean
+
+PDFLATEX: $(DEPENDENCIES)
+	make clean
+	pdflatex $(PROPOSAL).tex
+	bibtex   $(PROPOSAL)
+	pdflatex $(PROPOSAL).tex
+	pdflatex $(PROPOSAL).tex
+	make clean
 
 clean:	
 	@echo
-	rm -f $(TMP_FILES) *.gnuplot *.table
+	@for tmp in $(TMP_FILES) ; \
+	do \
+    rm -f $(PROPOSAL).$$tmp ; \
+    rm -f Images/*-eps-converted-to.pdf ;\
+	done
 	@echo

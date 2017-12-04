@@ -334,8 +334,8 @@
   \vspace*{-0.50in}
   \begin{figure}
     \begin{center}
-      \includegraphics[width=2.34in,height=0.60in]{MichiganTech}
-      \label{figure0}
+      \includegraphics[width=3.25in]{MichiganTech}
+      \label{MichiganTechLogo}
     \end{center}
   \end{figure}
 
