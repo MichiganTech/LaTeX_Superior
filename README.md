@@ -59,7 +59,7 @@ If you are a MS Word user:
 
   2. Rename ```superior_proposal.docx``` as ```superior_proposal-john.docx```,
      replacing ```john``` with your own Michigan Tech ISO username, and email
-     it to Dr. Warren Perger (```wfp@mtu.edu```)
+     it to ```hpc-accounts-l@mtu.edu```
 
 
 What if you are working on multiple projects?
