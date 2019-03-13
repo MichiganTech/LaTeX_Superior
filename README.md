@@ -82,7 +82,7 @@ Author
 
 Dr. Gowtham, PhD         
 Director of Research Computing, IT             
-Adj. Asst. Professor, Physics/ECE               
+Research Associate Professor, ECE                                        
 Michigan Technological University                 
 Email: g@mtu.edu             
 http://sgowtham.com
