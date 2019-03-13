@@ -50,7 +50,7 @@ If you are LaTeX user:
 
   6. Rename ```superior_proposal.pdf``` as ```superior_proposal-john.pdf```,
      replacing ```john``` with your own Michigan Tech ISO username, and email
-     it to Dr. Warren Perger (```wfp@mtu.edu```)
+     it to ```hpc-accounts-l@mtu.edu```
 
 
 If you are a MS Word user:
